@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main section {
+  min-height: 40em;
+  width: 90%;
+  background-color: aliceblue;
+  padding: 1.5em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
