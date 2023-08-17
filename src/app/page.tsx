@@ -30,6 +30,10 @@ export default async function Home() {
       <main className={styles.main}>
         <section>
           {data.map((item: dataProps, idx: number) => {
+            const day = item.opportunity.published_at.slice(8, 10);
+            const month = item.opportunity.published_at.slice(5, 7);
+            const year = item.opportunity.published_at.slice(0, 4);
+
             return (
               <div key={idx}>
                 <h2>
@@ -39,7 +43,7 @@ export default async function Home() {
                 </h2>
                 <div>
                   <p>company: {item.opportunity.company_name}</p>
-                  <p>published at: {item.opportunity.published_at}</p>
+                  <p>published at: {`${day}/${month}/${year}`}</p>
                 </div>
               </div>
             );
