@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import styles from "../styles/page.module.css";
 import { Header } from "@/components/Header";
 
@@ -50,6 +51,7 @@ export default async function Home() {
           })}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
